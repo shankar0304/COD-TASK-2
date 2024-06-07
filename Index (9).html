@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List App</title>
-    <link rel="stylesheet" href="Styles.css">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>To-Do List</h1>
-        <input type="text" id="taskInput" placeholder="Add new task...">
-        <input type="time" id="taskTime">
-        <select id="taskPriority">
-            <option value="Low">Low</option>
-            <option value="Medium">Medium</option>
-            <option value="High">High</option>
-        </select>
-        <button onclick="addTask()">Add Task</button>
-        <ul id="taskList"></ul> <!-- This was missing -->
+        <h1>Weather Forecast</h1>
+        <div class="weather-info">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="getWeather()">Get Weather</button>
+            <div id="weatherResults"></div>
+        </div>
     </div>
-    <script src="javascripts.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
